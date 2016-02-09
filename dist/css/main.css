@@ -1,0 +1,308 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+    font-family: Helvetica,Arial,sans-serif;
+}
+
+.button-link-dark {
+    display: block;
+    color: #000;
+    padding: 10px;
+    border: 2px solid #323232;
+}
+
+.button-link-dark:hover {
+    color: #FFF;
+    background: #323232;
+}
+
+/* ========================
+HEADER
+=========================== */
+header {
+    background: #323232;
+    color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 100;
+    padding: 0 40px;
+}
+
+.nav-heading {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+}
+
+.slim {
+    font-weight: 100;
+}
+
+header nav {
+    width: 40%;
+}
+
+.header-nav-ul {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.header-nav-ul li {
+    line-height: 70px;
+    text-align: center;
+    width: 33%;
+}
+
+.header-nav-ul li:hover  a {
+    padding-bottom: 6px;
+    border-bottom: 2px solid #979797;
+}
+
+.header-nav-ul a {
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+}
+
+
+/* ========================
+HERO
+=========================== */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ========================
+FOOTER
+=========================== */
+footer {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    background: #323232;
+    padding: 0 40px;
+}
+
+footer nav {
+    width: 50%;
+}
+
+.footer-nav-ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.footer-nav-ul li {
+    line-height: 70px;
+}
+
+.footer-nav-ul li a {
+    color: #979797;
+    text-decoration: none;
+}
+
+.footer-nav-ul li a:hover {
+    color: #FFF;
+}
+
+.social-media {
+    display: flex;
+    /*align-items: flex-end;*/
+    justify-content: flex-end;
+}
+
+.social-media .footer-nav-ul{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-media a {
+    display: block;
+    height: 30px;
+    width: 30px;
+    background: gray;
+}
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
