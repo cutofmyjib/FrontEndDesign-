@@ -153,6 +153,7 @@ IMAGES
     background: #e1e1e1;
     padding: 20px 40px;
 }
+
 .image-list-item {
     display: flex;
     justify-content: space-between;
@@ -280,6 +281,9 @@ footer nav {
    ========================================================================== */
 
 @media only screen and (max-width: 35em) {
+    /* ========================
+    HEADER
+    =========================== */
     header {
         flex-direction: column;
         justify-content: space-around;
@@ -298,6 +302,9 @@ footer nav {
         line-height: 1;
     }
 
+    /* ========================
+    HERO
+    =========================== */
     .hero {
         margin-top: 150px;
     }
@@ -305,6 +312,21 @@ footer nav {
     .hero-wrapper {
         width: 85%;
     }
+
+    /* ========================
+    IMAGES
+    =========================== */
+    .image-list-item {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .img-div, .p-div {
+        width: 100%;
+        padding: 0;
+    }
+
+
 }
 
 @media print,
