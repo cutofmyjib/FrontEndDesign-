@@ -48,6 +48,8 @@ body {
     font-family: Helvetica,Arial,sans-serif;
 }
 
+
+
 .button-link-dark {
     display: block;
     color: #000;
@@ -62,7 +64,12 @@ body {
     background: #323232;
 }
 
-
+.center-container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 /* ========================
 HEADER
@@ -130,48 +137,82 @@ HERO
     align-items: center;
 }
 
-.center-container {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 650px;
+.hero-wrapper {
+    width: 400px;
+    text-align: center;
 }
+
 /* ========================
 IMAGES
 =========================== */
-.image-list {
+.images-div {
+    background: #e1e1e1;
+    padding: 20px 40px;
+}
+.image-list-item {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: 460px;
 }
 
 .img-div {
     display: flex;
-    width: 40%;
-    height: 200px;
-    background: yellow;
+    width: 50%;
+    padding-right: 20px;
     justify-content: center;
-
-    margin: 0 5%;
-    border: 1px solid red;
 }
 
 .img-div img {
     width: 100%;
-    height: 100%;
     object-fit: cover;
 }
 
 .p-div {
-    display: flex;
-    width: 40%;
-    margin: 0 5%;
+    width: 50%;
+    padding-left: 20px;
 }
 
 .p-div p {
     font-size: 1.25em;
+}
+
+/* ========================
+HOME SECTION
+=========================== */
+.row-stack {
+    display: flex;
+    width: 100%;
+}
+
+.aside {
+    background: gray;
+    width: 25%;
+    padding: 5%;
+}
+
+.side-links-ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-align: right;
+}
+
+.side-links-ul li {
+    padding-bottom: 24px;
+}
+
+.home-section-wrapper {
+    align-items: flex-start;
+}
+
+.home-section-content {
+    width: 55%;
+    margin: 5%;
+}
+
+.home-section-content h1 {
+    margin: 0;
+    padding: 0;
 }
 
 /* ========================
@@ -212,7 +253,6 @@ footer nav {
 
 .social-media {
     display: flex;
-    /*align-items: flex-end;*/
     justify-content: flex-end;
 }
 
