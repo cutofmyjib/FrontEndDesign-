@@ -88,7 +88,7 @@ header {
 }
 
 header nav {
-    width: 40%;
+    width: 50%;
 }
 
 .header-nav-ul {
@@ -286,7 +286,7 @@ footer nav {
 }
 
 .footer-nav-ul {
-    width: 75%;
+    width: 85%;
     margin: 0;
     padding: 0;
     display: flex;
@@ -357,6 +357,14 @@ footer nav {
     =========================== */
     .hero {
         margin-top: 150px;
+    }
+
+    .hero .heading {
+        font-size: 2.618em;
+    }
+
+    .hero p, .hero a {
+        font-size: 1.333em;
     }
 
     .hero-wrapper {
