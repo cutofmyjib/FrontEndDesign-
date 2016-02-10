@@ -3,6 +3,7 @@ import {render} from 'react-dom';
 import Header from './header.js'
 import Hero from './hero.js'
 import Images from './images.js'
+import HomeSection from './home-section.js'
 import Footer from './footer.js'
 
 class App extends Component {
@@ -12,6 +13,7 @@ class App extends Component {
         <Header />
         <Hero />
         <Images />
+        <HomeSection />
         <Footer />
       </div>
     );
