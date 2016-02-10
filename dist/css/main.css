@@ -48,27 +48,16 @@ body {
     font-family: Helvetica,Arial,sans-serif;
 }
 
-
-
-.button-link-dark {
-    display: block;
-    color: #000;
-    padding: 10px;
-    border: 2px solid #323232;
-    font-weight: bold;
-    font-size: .75em;
-}
-
-.button-link-dark:hover {
-    color: #FFF;
-    background: #323232;
-}
-
 .center-container {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.heading {
+    font-size: 2.370em;
+    font-weight: normal;
 }
 
 /* ========================
@@ -77,7 +66,7 @@ HEADER
 header {
     position: fixed;
     top: 0;
-    background: #323232;
+    background: #008571;
     color: #FFF;
     display: flex;
     justify-content: space-between;
@@ -117,7 +106,7 @@ header nav {
 
 .header-nav-ul li:hover  a {
     padding-bottom: 6px;
-    border-bottom: 2px solid #979797;
+    border-bottom: 2px solid #F9F9FB;
 }
 
 .header-nav-ul a {
@@ -132,13 +121,26 @@ HERO
 =========================== */
 .hero {
     margin-top: 70px;
-    margin:  0 5%;
-    height: 100vh;
-    font-size: 1.25em;
+    padding:  0 5%;
+    height: 75vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: #41D6C3 url("http://www.ibm.com/design/language/images/framework/animation/ani-intro-hero.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFF;
+}
+
+.hero .heading {
+    font-size: 4.236em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.618em;
 }
 
 .hero-wrapper {
@@ -146,11 +148,26 @@ HERO
     text-align: center;
 }
 
+.button-link-hero {
+    display: block;
+    padding: 10px 15px;
+    border: 2px solid #FFF;
+    font-size: 1.618em;
+    font-weight: normal;
+}
+
+.button-link-hero:hover {
+    background: #FFF;
+    color: #41D6C3;
+    transition: all 0.3s;
+}
+
+
 /* ========================
 IMAGES
 =========================== */
 .images-div {
-    background: #e1e1e1;
+    background: #F9F9FB;
     padding: 20px 40px;
 }
 
@@ -179,7 +196,11 @@ IMAGES
 }
 
 .p-div p {
-    font-size: 1.25em;
+    font-size: 1em;
+}
+
+.p-div a {
+    color: #A6266E;
 }
 
 /* ========================
@@ -191,12 +212,13 @@ HOME SECTION
 }
 
 .aside {
-    background: gray;
+    background: #EFC100;
     width: 25%;
     padding: 5%;
 }
 
 .side-links-ul {
+    color: #000;
     padding: 0;
     margin: 0;
     list-style-type: none;
@@ -207,18 +229,43 @@ HOME SECTION
     padding-bottom: 24px;
 }
 
-.home-section-wrapper {
-    align-items: flex-start;
+.side-links-ul a {
+    text-decoration: none;
+    color: #000;
+}
+
+.side-links-ul a:hover {
+    text-decoration: underline;
 }
 
 .home-section-content {
     width: 55%;
-    margin: 5%;
+    padding: 5%;
+    background: #F4F4F4;
 }
 
 .home-section-content h1 {
     margin: 0;
     padding: 0;
+}
+
+.home-section-wrapper {
+    align-items: flex-start;
+}
+
+.button-link-dark {
+    display: block;
+    color: #A6266E;
+    padding: 10px 15px;
+    border: 2px solid #A6266E;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.button-link-dark:hover {
+    color: #FFF;
+    background: #A6266E;
+    transition: all 0.3s;
 }
 
 /* ========================
@@ -230,6 +277,8 @@ footer {
     height: 70px;
     background: #323232;
     padding: 0 40px;
+    font-weight: bold;
+    font-size: .875em;
 }
 
 footer nav {
@@ -237,6 +286,7 @@ footer nav {
 }
 
 .footer-nav-ul {
+    width: 75%;
     margin: 0;
     padding: 0;
     display: flex;
@@ -367,6 +417,13 @@ footer nav {
 
     footer nav {
         width: 100%;
+
+    }
+
+    .footer-nav-ul {
+        width: 100%;
+        justify-content: space-around;
+        margin: auto;
     }
 
     .social-media {
