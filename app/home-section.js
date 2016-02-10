@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 export default class HomeSection extends Component {
   render() {
     return (
-      <div className="row-stack">
+      <div className="home-section-stack">
         <div className="aside">
           <ul className="side-links-ul">
             <li>Sidebar Link</li>
