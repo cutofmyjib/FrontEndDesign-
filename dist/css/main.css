@@ -75,14 +75,17 @@ body {
 HEADER
 =========================== */
 header {
+    position: fixed;
+    top: 0;
     background: #323232;
     color: #FFF;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 70px;
-    width: 100;
+    width: 100%;
     padding: 0 40px;
+    box-sizing: border-box;
 }
 
 .nav-heading {
@@ -128,6 +131,7 @@ header nav {
 HERO
 =========================== */
 .hero {
+    margin-top: 70px;
     margin:  0 5%;
     height: 100vh;
     font-size: 1.25em;
@@ -138,7 +142,7 @@ HERO
 }
 
 .hero-wrapper {
-    width: 400px;
+    width: 60%;
     text-align: center;
 }
 
@@ -149,6 +153,7 @@ IMAGES
     background: #e1e1e1;
     padding: 20px 40px;
 }
+
 .image-list-item {
     display: flex;
     justify-content: space-between;
@@ -180,7 +185,7 @@ IMAGES
 /* ========================
 HOME SECTION
 =========================== */
-.row-stack {
+.home-section-stack {
     display: flex;
     width: 100%;
 }
@@ -198,7 +203,7 @@ HOME SECTION
     text-align: right;
 }
 
-.side-links-ul li {
+.side-links-ul li:not(:last-child) {
     padding-bottom: 24px;
 }
 
@@ -275,7 +280,99 @@ footer nav {
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (max-width: 35em) {
+    /* ========================
+    HEADER
+    =========================== */
+    header {
+        flex-direction: column;
+        justify-content: space-around;
+        height: 150px;
+    }
+
+    header nav {
+        width: 100%;
+    }
+
+    .nav-heading {
+        padding: 10px;
+    }
+
+    .header-nav-ul li {
+        line-height: 1;
+    }
+
+    /* ========================
+    HERO
+    =========================== */
+    .hero {
+        margin-top: 150px;
+    }
+
+    .hero-wrapper {
+        width: 85%;
+    }
+
+    /* ========================
+    IMAGES
+    =========================== */
+    .image-list-item {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .img-div, .p-div {
+        width: 100%;
+        padding: 0;
+    }
+
+    /* ========================
+    HOME-SECTION
+    =========================== */
+    .home-section-stack {
+        flex-direction: column;
+    }
+
+    .aside {
+        width: 100%;
+        padding: 40px;
+        box-sizing: border-box;
+    }
+
+    .side-links-ul {
+        text-align: left;
+    }
+
+    .side-links-ul li {
+
+    }
+
+    .home-section-content {
+        margin: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .home-section-wrapper {
+        margin: 40px;
+    }
+
+    /* ========================
+    FOOTER
+    =========================== */
+    footer {
+        flex-direction: column;
+        height: 200px;
+        justify-content: center;
+    }
+
+    footer nav {
+        width: 100%;
+    }
+
+    .social-media {
+        justify-content: center;
+        padding: 20px 0;
+    }
 
 }
 
