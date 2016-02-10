@@ -6,14 +6,14 @@ export default class HomeSection extends Component {
       <div className="home-section-stack">
         <div className="aside">
           <ul className="side-links-ul">
-            <li>Sidebar Link</li>
-            <li>Another Longer Sidebar Link</li>
-            <li>Sidebar Link</li>
+            <li><a href="#">Sidebar Link</a></li>
+            <li><a href="#">Another Longer Sidebar Link</a></li>
+            <li><a href="#">Sidebar Link</a></li>
           </ul>
         </div>
         <div className="home-section-content">
           <div className="center-container home-section-wrapper">
-            <h1>Header</h1>
+            <h1 className="heading">Header</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
   veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex eatur.
