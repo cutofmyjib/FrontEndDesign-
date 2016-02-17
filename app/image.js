@@ -5,7 +5,7 @@ export default class Images extends Component {
     return (
       <div className="image-list-item">
         <div className="img-div">
-          <img src="http://placehold.it/350x150" />
+          <img src={this.props.source} />
         </div>
         <div className="p-div">
           <p>
